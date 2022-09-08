@@ -34,9 +34,11 @@ export default {
         default: null
       }
     },
-    methods: {
+    data() {
+      return {
         formatPrice
-    }
+      }
+    },
 }
 </script>
 
