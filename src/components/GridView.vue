@@ -10,25 +10,18 @@
 
 <script>
 import Product from './Product.vue'
-// import { mapActions } from 'pinia'
-// import { useProducts } from '../stores/products'
 
 export default {
-   props: ['products'],
+   props: {
+    products: {
+      type: String,
+      default: null
+    }
+   },
    components: {
       Product
    },
-  //  methods: {
-  //     ...mapActions(useProducts, ['fetchProducts'])
-  //  },
-  //  mounted() {
-  //     this.fetchProducts()
-  //  },
-  //  watch: {
-  //   products() {
-  //     this.fetchProducts()
-  //   }
-  //  }
+  
 }
 </script>
 
