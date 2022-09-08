@@ -16,24 +16,25 @@
 <script>
 import { formatPrice } from '../utils/helpers'
 export default {
-    props: {
-      image: {
-        type: String,
-        default: null
-      }, 
-      name: {
-        type: String,
-        default: null
-      },
-      price: {
-        type: Number,
-        default: null
-      },
-      id: {
-        type: String,
-        default: null
-      }
-    },
+    // props: {
+    //   image: {
+    //     type: String,
+    //     default: null
+    //   }, 
+    //   name: {
+    //     type: String,
+    //     default: null
+    //   },
+    //   price: {
+    //     type: Number,
+    //     default: null
+    //   },
+    //   id: {
+    //     type: String,
+    //     default: null
+    //   }
+    // },
+    props: [ 'image', 'id', 'name', 'price'],
     data() {
       return {
         formatPrice
