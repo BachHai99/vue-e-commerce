@@ -23,12 +23,12 @@
 </template>
 
 <script>
-import { mapState, mapActions } from "pinia";
+import { mapWritableState, mapActions } from "pinia";
 import { useProducts } from "../stores/products";
 
 export default {
     computed: {
-        ...mapState(useProducts, ['products', 'grid_view', 'sort', 'filtered_products']),
+        ...mapWritableState(useProducts, ['products', 'grid_view', 'sort', 'filtered_products']),
     },
     methods: {
         ...mapActions(useProducts, ['setGridView', 'setListView', 'sortProducts'])
