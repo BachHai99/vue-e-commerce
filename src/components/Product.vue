@@ -17,10 +17,22 @@
 import { formatPrice } from '../utils/helpers'
 export default {
     props: {
-        'image': String,
-        'name': String,
-        'price': Number,
-        'id': String
+      image: {
+        type: String,
+        default: null
+      }, 
+      name: {
+        type: String,
+        default: null
+      },
+      price: {
+        type: Number,
+        default: null
+      },
+      id: {
+        type: String,
+        default: null
+      }
     },
     methods: {
         formatPrice
