@@ -16,9 +16,13 @@
 
 <script>
 import { formatPrice } from '../utils/helpers'
-// import { useRoute } from 'vue-router'
 export default {
-    props: ['products'],
+    props: {
+      products: {
+        type: String,
+        default: null
+      }
+    },
     methods: {
         formatPrice
     }
