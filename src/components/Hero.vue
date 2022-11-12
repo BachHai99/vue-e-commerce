@@ -2,7 +2,7 @@
     <div class="hero-wrapper">
         <article class="content">
             <h1>
-                design your <br /> 
+                design by <br /> 
                 MENT
             </h1>
             <p>MENT Company là một trong những công ty Công nghệ hàng đầu tại Huế. MENT chuyên thiết kết website, thiết kế ứng dụng lập trình, lập trình website, 
